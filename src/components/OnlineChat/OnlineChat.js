@@ -4,7 +4,7 @@ import { useState } from "react"
 import Chat from "./Chat";
 import { Link } from "react-router-dom";
 
-const socket = io.connect("https://devcenter.heroku.com/articles/buildpacks");
+const socket = io.connect("https://localhost:2020");
 
 function OnlineChat() {
   const [username, setUsername] = useState("");
